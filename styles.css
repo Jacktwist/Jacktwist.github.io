@@ -4,6 +4,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#contact {
+}
+p {
+  padding: 0px 5px 0px 5px;
+}
 img {
 	border: solid 1px;
   max-width: 25%;
@@ -17,39 +22,87 @@ img {
   top: 0px;
 }
 ul{
-  color: #E2F700;
+  padding: 5px;
   list-style-type: none;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-#info-box ul{
-  opacity: 0%;
-  animation: fadeIn 1.2s ease-in-out .3s forwards;
+#nav-bar li{
+  font-weight: bold;
+  padding: 5px;
+  color: #E2F700;
+}
+#nav-bar li:hover{
+  transition: background-color .5s ease-in-out;
+  border-radius: 15%;
+  background-color: Indigo;
+  border: 
+}
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Opera and Firefox */
+}
+.info-box ul{
   display: flexbox;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+
+.info-box{
+  opacity: 0%;
+  animation: fadeIn 1.2s ease-in-out .3s forwards;
   color: #0C091A;
   background-color: antiquewhite;
   border: solid 5px grey;
   border-radius: 5pt;
-
   width:20%;
   height: 15%;
   margin: 10% auto auto 10%;
   padding: 10px;
 }
-
+label {
+  display: block;
+}
+a:hover {
+  transition: background-color .5s ease-in-out;
+  border-radius: 15%;
+  background-color: Indigo;
+  border: 
+}
+.hide {
+  display: none;
+}
+.fade-out {
+  animation: fadeOut 1.2s ease-in-out .3s forwards;
+}
+.staged {
+  animation: fadeIn 1.2s ease-in-out .3s forwards;
+}
 @keyframes fadeIn {
   0% {
     opacity:0%;
   }
   100% {
-    opacity: 70%;
+    opacity: 90%;
   }
   }
-
+@keyframes fadeOut {
+  0% {
+    opacity: 90%;
+  }
+  {
+    100% {
+      opacity: 0%;
+    }
+  }
+}
 /*
 linear-gradient(to right, #32FF62, #32FFD6, #29A4D1, #226Faa, #D843C9);
 */
